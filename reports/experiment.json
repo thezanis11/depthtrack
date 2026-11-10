@@ -1,0 +1,66 @@
+{
+  "project": "DepthTrack",
+  "protocol": "depthtrack-v1",
+  "generated_utc": "2026-11-10T14:07:10.139070+00:00",
+  "python": "3.14.0",
+  "platform": "Windows",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "opencv-python-headless": "5.0.0.93",
+    "matplotlib": "3.11.2"
+  },
+  "calibration_sha256": "04567741746c247df62ab9642a2ce2e0b5a47f3d8e361530d2934b473d9e6fdb",
+  "dataset_manifest_sha256": "a8e78fcee188c1ef7b19ccfd3fbe042f3445eeb5d7ef217f9ae401138c08373d",
+  "configuration": {
+    "keyframes": true,
+    "refine": true,
+    "depth_filter": true,
+    "keyframe_age": 5,
+    "ratio_test": 0.75,
+    "reprojection_px": 3.0,
+    "minimum_inliers": 12,
+    "minimum_ratio": 0.3,
+    "max_translation_speed": 3.0,
+    "max_rotation_speed": 360.0
+  },
+  "warning_threshold": 0.5408063638150269,
+  "split": {
+    "xyz": "development",
+    "rpy": "validation",
+    "desk": "test",
+    "floor": "test"
+  },
+  "runs": 44,
+  "cached_runs": 0,
+  "elapsed_seconds": 604.7218565000221,
+  "source_sha256": {
+    "depthtrack/__init__.py": "bd22d0525fe415d9be62929630da5f8c03758839d9580310947c5093a38b7065",
+    "depthtrack/cli.py": "73b4f07300de9e6cc02e7e1d4abef89d00f96812d2d4a7640b2de4bc090211d0",
+    "depthtrack/dataset.py": "b6b7340886b4f777e332bf39c2c32709b57cf742bf06af29de877cd4d777fae2",
+    "depthtrack/evaluation.py": "08f946c8d59124369f47077214496a636db1291c9f4150eedb07f3e14fccd654",
+    "depthtrack/experiments.py": "886a5dc63c447fe2a9b9fa4ecff26f7d90402da4185c6c56052acc911bbe79b8",
+    "depthtrack/features.py": "ec85beba1737dc0bd6fd3284036a8f09f0807720573951d01f6566190963c8a2",
+    "depthtrack/geometry.py": "e3ad000d2143d8bfde6cbf1606eabc11754cad8f1e5519b9966b6b1b9cc81a41",
+    "depthtrack/report.py": "49216274c5c7723ff55c571f508185b1f3cdd674901a77be20f1493e00f4b120",
+    "depthtrack/tracker.py": "da9cf5f01b1ff7cf35fed0def41b6ee194de08fd190192e933490d8c200539fa",
+    "scripts/analyze_results.py": "f393435accb1be576aee4fa4216cb1f70220261205ed492e2dd33fb9e487145d",
+    "scripts/check_report.py": "cc077a4d540234bb466520f5e698cc565a2f028a320c324baea3ab614f104981",
+    "scripts/download_data.py": "5cacda0b235c48bf557473c47073a73bdf5ccdb92d235e3217d9adee53ddda4e",
+    "scripts/lock_dependencies.py": "f5cd1b53cbd7c17921a101e13668c8b139cc5ba34c9e000d5e25b39c6b3cf3b2",
+    "scripts/make_demo.py": "e82067e2ff68e92345c3679551efb835b20591053f09ae4777fabccce88c15cb"
+  },
+  "output_sha256": {
+    "metrics.csv": "36db407cd217cb7c5896172cdf48308008503f8dc2729b176599e7d3c878cf65",
+    "metrics.json": "444d3dad955b767aa89986802856d2429308e1c2d5b7d1d4417eda2ce486c65a",
+    "data_quality.json": "492cbc1c5ec8207b5b8053b9a285fd1fa4575cc92562703923ff6ee7b35d4d21",
+    "replay.json": "b32352084494200fd47ef176d4761e524d376e1cab6132f85f743dd2faeba419"
+  },
+  "limitations": [
+    "Four sequences from one indoor benchmark; not independent domains",
+    "No confidence intervals across correlated frames or repeated corruption seeds",
+    "Tracking failure outputs missing poses; held-last is an evaluation-only penalty",
+    "No scale alignment, loop closure or relocalization",
+    "Quality diagnostic is contemporaneous, not a calibrated probability or proven early warning",
+    "Cached runs retain their original measured tracking times"
+  ]
+}

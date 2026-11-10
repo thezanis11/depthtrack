@@ -1,0 +1,66 @@
+{
+  "xyz": {
+    "url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_xyz.tgz",
+    "archive_bytes": 448204271,
+    "archive_sha256": "a0236d97b8c30cd93b653656d2b6c293ff7c982a4130ef2a1a8beecdb124ef98",
+    "checksum_origin": "SHA-256 measured on initial HTTPS acquisition, not a publisher-signed checksum",
+    "license": "CC-BY-4.0",
+    "attribution": "Sturm et al., A Benchmark for the Evaluation of RGB-D SLAM Systems, IROS 2012",
+    "acquired_utc": "2026-11-10T13:46:39.034160+00:00",
+    "extracted_files": 1601,
+    "extracted_bytes": 479252107,
+    "index_sha256": {
+      "rgb.txt": "532884d60bef0c9a05e14bf311998883baf59a2fa47009d1021f2c7937bd69a3",
+      "depth.txt": "d5abcc12d67cd2f5ae6f405ab1459a416ab2c1cdfb16d9bbd137d5f77d3285df",
+      "groundtruth.txt": "aac0319a6ef4e1cdf61e779d2152b95aa7e9f7b1749d6d18717b43ddabffede2"
+    }
+  },
+  "rpy": {
+    "url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_rpy.tgz",
+    "archive_bytes": 410268381,
+    "archive_sha256": "78103722a25873dbbb4de027eaa8c810a6382100691f02b6cf95c3adc91c4ac1",
+    "checksum_origin": "SHA-256 measured on initial HTTPS acquisition, not a publisher-signed checksum",
+    "license": "CC-BY-4.0",
+    "attribution": "Sturm et al., A Benchmark for the Evaluation of RGB-D SLAM Systems, IROS 2012",
+    "acquired_utc": "2026-11-10T13:47:38.773648+00:00",
+    "extracted_files": 1450,
+    "extracted_bytes": 440635995,
+    "index_sha256": {
+      "rgb.txt": "d926665efe8d386eee358b9cc6946714f26cb7756fc8997cd2ca698817ef0b2b",
+      "depth.txt": "19806cf7f5939c6760f6aaa2de9806e10ff988f8fcca906817eb225a505ec48c",
+      "groundtruth.txt": "013296acadde7744afa2432d73d47b12e4462fc2a6f3342a5345e85a176fe989"
+    }
+  },
+  "desk": {
+    "url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_desk.tgz",
+    "archive_bytes": 344011403,
+    "archive_sha256": "e983d6830916e66dc4a46a71368046b149b283de87769690e7aa4e0b9483530c",
+    "checksum_origin": "SHA-256 measured on initial HTTPS acquisition, not a publisher-signed checksum",
+    "license": "CC-BY-4.0",
+    "attribution": "Sturm et al., A Benchmark for the Evaluation of RGB-D SLAM Systems, IROS 2012",
+    "acquired_utc": "2026-11-10T13:48:14.536870+00:00",
+    "extracted_files": 1213,
+    "extracted_bytes": 367285578,
+    "index_sha256": {
+      "rgb.txt": "d1bc510ecca08540e03be8df55af8857753b614d8a5c38526bc669ce6c802284",
+      "depth.txt": "e56f037046113192151abebded5513709d03a57b46624b8343eb4efd4419f14c",
+      "groundtruth.txt": "48c4fa61f5d78310ea579f404d31d296738c4210c19c2bdac4a5cdf6bff50831"
+    }
+  },
+  "floor": {
+    "url": "https://webshare.cvg.cit.tum.de/g/rgbd/dataset/freiburg1/rgbd_dataset_freiburg1_floor.tgz",
+    "archive_bytes": 734599281,
+    "archive_sha256": "16f8e7f13e0fc3983711b5d9db8ee663c73a5e29225b64dbe5ccaa9257e082bb",
+    "checksum_origin": "SHA-256 measured on initial HTTPS acquisition, not a publisher-signed checksum",
+    "license": "CC-BY-4.0",
+    "attribution": "Sturm et al., A Benchmark for the Evaluation of RGB-D SLAM Systems, IROS 2012",
+    "acquired_utc": "2026-11-10T13:49:57.575429+00:00",
+    "extracted_files": 2492,
+    "extracted_bytes": 778210340,
+    "index_sha256": {
+      "rgb.txt": "ef124c3f8384916f079328ee0b0e4d17f85246376502bfffa04239e96ebdb3e3",
+      "depth.txt": "2a2f14601fe0b8d41f5d3ad1f84d02aaa1841843c5c4ee76fdec4e57414e5497",
+      "groundtruth.txt": "f3806724af6917b2dada98c575981c4821f517b6d6668e548b3b5c238421bc81"
+    }
+  }
+}

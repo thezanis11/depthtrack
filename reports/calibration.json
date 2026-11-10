@@ -1,0 +1,157 @@
+{
+  "protocol": "depthtrack-v1",
+  "created_utc": "2026-11-10T13:56:00.916568+00:00",
+  "splits": {
+    "xyz": "development",
+    "rpy": "validation",
+    "desk": "test",
+    "floor": "test"
+  },
+  "core_sha256": {
+    "dataset.py": "b6b7340886b4f777e332bf39c2c32709b57cf742bf06af29de877cd4d777fae2",
+    "features.py": "ec85beba1737dc0bd6fd3284036a8f09f0807720573951d01f6566190963c8a2",
+    "geometry.py": "e3ad000d2143d8bfde6cbf1606eabc11754cad8f1e5519b9966b6b1b9cc81a41",
+    "tracker.py": "da9cf5f01b1ff7cf35fed0def41b6ee194de08fd190192e933490d8c200539fa",
+    "evaluation.py": "08f946c8d59124369f47077214496a636db1291c9f4150eedb07f3e14fccd654"
+  },
+  "selected_config": {
+    "keyframes": true,
+    "refine": true,
+    "depth_filter": true,
+    "keyframe_age": 5,
+    "ratio_test": 0.75,
+    "reprojection_px": 3.0,
+    "minimum_inliers": 12,
+    "minimum_ratio": 0.3,
+    "max_translation_speed": 3.0,
+    "max_rotation_speed": 360.0
+  },
+  "warning_threshold": 0.5408063638150269,
+  "threshold_rule": "5th percentile of successful clean rpy quality; no test labels",
+  "candidate_objective": "held-last initial-aligned ATE[m] + 0.01*orientation RMSE[deg] + missing-frame fraction",
+  "candidates": [
+    {
+      "config": {
+        "keyframes": true,
+        "refine": true,
+        "depth_filter": true,
+        "keyframe_age": 5,
+        "ratio_test": 0.75,
+        "reprojection_px": 3.0,
+        "minimum_inliers": 12,
+        "minimum_ratio": 0.3,
+        "max_translation_speed": 3.0,
+        "max_rotation_speed": 360.0
+      },
+      "validation_score": 0.2307033696203388,
+      "metrics": {
+        "frames": 694,
+        "tracked_frames": 694,
+        "tracked_fraction": 1.0,
+        "tracked_time_fraction": 1.0,
+        "ground_truth_fraction": 0.9956772334293948,
+        "evaluated_frames": 691,
+        "initial_alignment_ate_rmse_m": 0.1269614740790336,
+        "rigid_alignment_ate_rmse_m": 0.050159411149222226,
+        "held_last_ate_rmse_m": 0.12696147407903358,
+        "orientation_rmse_deg": 10.374189554130522,
+        "rpe_05s_translation_rmse_m": 0.04143327894575935,
+        "rpe_05s_rotation_rmse_deg": 1.9466321305718641,
+        "rpe_pairs": 660,
+        "loss_events": 0,
+        "longest_loss_s": 0.0,
+        "tracking_median_ms": 25.183350022416562,
+        "tracking_p95_ms": 30.06046001100913
+      }
+    },
+    {
+      "config": {
+        "keyframes": true,
+        "refine": true,
+        "depth_filter": true,
+        "keyframe_age": 10,
+        "ratio_test": 0.75,
+        "reprojection_px": 3.0,
+        "minimum_inliers": 12,
+        "minimum_ratio": 0.3,
+        "max_translation_speed": 3.0,
+        "max_rotation_speed": 360.0
+      },
+      "validation_score": 0.2846296740152487,
+      "metrics": {
+        "frames": 694,
+        "tracked_frames": 694,
+        "tracked_fraction": 1.0,
+        "tracked_time_fraction": 1.0,
+        "ground_truth_fraction": 0.9956772334293948,
+        "evaluated_frames": 691,
+        "initial_alignment_ate_rmse_m": 0.18974794732084216,
+        "rigid_alignment_ate_rmse_m": 0.09189016319651831,
+        "held_last_ate_rmse_m": 0.18974794732084213,
+        "orientation_rmse_deg": 9.488172669440655,
+        "rpe_05s_translation_rmse_m": 0.043872193771772615,
+        "rpe_05s_rotation_rmse_deg": 2.16696302270074,
+        "rpe_pairs": 660,
+        "loss_events": 0,
+        "longest_loss_s": 0.0,
+        "tracking_median_ms": 25.221150019206107,
+        "tracking_p95_ms": 30.411634972551838
+      }
+    },
+    {
+      "config": {
+        "keyframes": true,
+        "refine": true,
+        "depth_filter": true,
+        "keyframe_age": 20,
+        "ratio_test": 0.75,
+        "reprojection_px": 3.0,
+        "minimum_inliers": 12,
+        "minimum_ratio": 0.3,
+        "max_translation_speed": 3.0,
+        "max_rotation_speed": 360.0
+      },
+      "validation_score": 0.47016003228561765,
+      "metrics": {
+        "frames": 694,
+        "tracked_frames": 692,
+        "tracked_fraction": 0.9971181556195965,
+        "tracked_time_fraction": 0.9960099061488902,
+        "ground_truth_fraction": 0.9956772334293948,
+        "evaluated_frames": 689,
+        "initial_alignment_ate_rmse_m": 0.30034576551836406,
+        "rigid_alignment_ate_rmse_m": 0.12316122515466192,
+        "held_last_ate_rmse_m": 0.3004655005538455,
+        "orientation_rmse_deg": 16.68126873513686,
+        "rpe_05s_translation_rmse_m": 0.04896712152468483,
+        "rpe_05s_rotation_rmse_deg": 2.4303595230998813,
+        "rpe_pairs": 656,
+        "loss_events": 2,
+        "longest_loss_s": 0.06406521797180176,
+        "tracking_median_ms": 25.32360004261136,
+        "tracking_p95_ms": 34.97967499424704
+      }
+    }
+  ],
+  "development_baseline": {
+    "frames": 792,
+    "tracked_frames": 792,
+    "tracked_fraction": 1.0,
+    "tracked_time_fraction": 1.0,
+    "ground_truth_fraction": 0.9949494949494949,
+    "evaluated_frames": 788,
+    "initial_alignment_ate_rmse_m": 0.13472634647434284,
+    "rigid_alignment_ate_rmse_m": 0.06407831599108964,
+    "held_last_ate_rmse_m": 0.13472634647434284,
+    "orientation_rmse_deg": 3.199401054609399,
+    "rpe_05s_translation_rmse_m": 0.027478565187130214,
+    "rpe_05s_rotation_rmse_deg": 1.531833803474319,
+    "rpe_pairs": 764,
+    "loss_events": 0,
+    "longest_loss_s": 0.0,
+    "tracking_median_ms": 26.839250000193715,
+    "tracking_p95_ms": 33.98361498839222
+  },
+  "elapsed_seconds": 73.61828950000927,
+  "scope": "Exploratory development; desk/floor not opened by calibration"
+}
