@@ -38,6 +38,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe scripts/download_data.py
 .\.venv\Scripts\python.exe -m depthtrack.cli benchmark
 .\.venv\Scripts\python.exe scripts/analyze_results.py
+.\.venv\Scripts\python.exe scripts/make_demo.py
 .\.venv\Scripts\python.exe scripts/check_report.py
 ```
 
